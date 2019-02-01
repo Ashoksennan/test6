@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sample</string>
+    <string name="email">Enter Email ID</string>
+    <string name="sample_mail_id">abc@gmail.com</string>
+    <string name="password">Enter password</string>
+    <string name="username">Enter UserName</string>
+    <string name="cnfrm_password">Enter Confirm Password</string>
+    <string name="name">Enter Name</string>
+    <string name="phno">Enter Phno</string>
+</resources>

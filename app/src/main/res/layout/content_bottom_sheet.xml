@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetLayout"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dimen_4dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="@dimen/activity_vertical_margin"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="60dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginLeft="@dimen/dimen_4dp"
+        android:layout_marginRight="@dimen/dimen_4dp"
+        android:layout_marginBottom="@dimen/dimen_4dp"
+        android:inputType="text|textNoSuggestions"
+        app:met_clearButton="true"
+        app:met_errorColor="@android:color/holo_red_dark"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/dimen_16sp"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/colorPrimaryDark"
+        android:gravity="start" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_phno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phno"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginLeft="@dimen/dimen_4dp"
+        android:layout_marginRight="@dimen/dimen_4dp"
+        android:layout_marginBottom="@dimen/dimen_4dp"
+        android:inputType="number|textNoSuggestions"
+        app:met_clearButton="true"
+        android:maxLength="10"
+        app:met_errorColor="@android:color/holo_red_dark"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/dimen_16sp"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/colorPrimaryDark"
+        android:gravity="start" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/edit_btn"
+            android:layout_margin="@dimen/dimen_4dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rectangle_background_selected"
+            android:text="Edit"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/save_btn"
+            android:layout_margin="@dimen/dimen_4dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rectangle_background_selected"
+            android:text="Save"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/delete_btn"
+            android:layout_margin="@dimen/dimen_4dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rectangle_background_selected"
+            android:text="Delete"/>
+    </LinearLayout>
+</LinearLayout>

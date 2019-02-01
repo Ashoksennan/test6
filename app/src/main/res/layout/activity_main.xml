@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dimen_4dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+  <com.rengwuxian.materialedittext.MaterialEditText
+      android:id="@+id/et_mailid"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/email"
+      android:text="ashok123@gmail.com"
+      android:layout_marginTop="@dimen/dimen_8dp"
+      android:layout_marginLeft="@dimen/dimen_4dp"
+      android:layout_marginRight="@dimen/dimen_4dp"
+      android:layout_marginBottom="@dimen/dimen_4dp"
+      android:inputType="textEmailAddress|textNoSuggestions"
+      app:met_clearButton="true"
+      app:met_errorColor="@android:color/holo_red_dark"
+      android:textAlignment="viewStart"
+      app:met_helperText="@string/sample_mail_id"
+      android:textSize="@dimen/dimen_16sp"
+      app:met_floatingLabel="highlight"
+      app:met_primaryColor="@color/colorPrimaryDark"
+      android:gravity="start" />
+
+  <com.rengwuxian.materialedittext.MaterialEditText
+      android:id="@+id/et_password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/password"
+      android:maxLength="6"
+      android:text="Ashok1"
+      android:layout_marginTop="@dimen/dimen_8dp"
+      android:layout_marginLeft="@dimen/dimen_4dp"
+      android:layout_marginRight="@dimen/dimen_4dp"
+      android:layout_marginBottom="@dimen/dimen_4dp"
+      android:inputType="textEmailAddress|textNoSuggestions"
+      app:met_clearButton="true"
+      app:met_errorColor="@android:color/holo_red_dark"
+      android:textAlignment="viewStart"
+      android:textSize="@dimen/dimen_16sp"
+      app:met_floatingLabel="highlight"
+      app:met_primaryColor="@color/colorPrimaryDark"
+      android:gravity="start" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/login_btn"
+        android:layout_margin="@dimen/dimen_4dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rectangle_background_selected"
+        android:text="Login"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_4dp"
+        android:layout_weight="1"
+        android:id="@+id/sigup_btn"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rectangle_background_selected"
+        android:text="SignUp"/>
+  </LinearLayout>
+
+
+</LinearLayout>
